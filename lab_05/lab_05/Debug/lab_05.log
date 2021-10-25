@@ -1,0 +1,144 @@
+﻿  Mesh.cpp
+D:\Study\AOKG\lab_05\lab_05\Mesh.cpp(76,23): warning C4018: <: несоответствие типов со знаком и без знака
+D:\Study\AOKG\lab_05\lab_05\Mesh.cpp(103,23): warning C4018: <: несоответствие типов со знаком и без знака
+D:\Study\AOKG\lab_05\lab_05\Mesh.cpp(127,23): warning C4018: <: несоответствие типов со знаком и без знака
+D:\Study\AOKG\lab_05\lab_05\Mesh.cpp(150,21): warning C4018: <: несоответствие типов со знаком и без знака
+D:\Study\AOKG\lab_05\lab_05\Mesh.cpp(155,37): warning C4244: аргумент: преобразование "T" в "const unsigned int", возможна потеря данных
+          with
+          [
+              T=float
+          ]
+D:\Study\AOKG\lab_05\lab_05\Mesh.cpp(156,37): warning C4244: аргумент: преобразование "T" в "const unsigned int", возможна потеря данных
+          with
+          [
+              T=float
+          ]
+D:\Study\AOKG\lab_05\lab_05\Mesh.cpp(157,37): warning C4244: аргумент: преобразование "T" в "const unsigned int", возможна потеря данных
+          with
+          [
+              T=float
+          ]
+D:\Study\AOKG\lab_05\lab_05\Mesh.cpp(159,43): warning C4244: аргумент: преобразование "T" в "const unsigned int", возможна потеря данных
+          with
+          [
+              T=float
+          ]
+D:\Study\AOKG\lab_05\lab_05\Mesh.cpp(160,43): warning C4244: аргумент: преобразование "T" в "const unsigned int", возможна потеря данных
+          with
+          [
+              T=float
+          ]
+D:\Study\AOKG\lab_05\lab_05\Mesh.cpp(161,43): warning C4244: аргумент: преобразование "T" в "const unsigned int", возможна потеря данных
+          with
+          [
+              T=float
+          ]
+D:\Study\AOKG\lab_05\lab_05\Mesh.cpp(163,38): warning C4244: аргумент: преобразование "T" в "const unsigned int", возможна потеря данных
+          with
+          [
+              T=float
+          ]
+D:\Study\AOKG\lab_05\lab_05\Mesh.cpp(164,38): warning C4244: аргумент: преобразование "T" в "const unsigned int", возможна потеря данных
+          with
+          [
+              T=float
+          ]
+D:\Study\AOKG\lab_05\lab_05\Mesh.cpp(165,38): warning C4244: аргумент: преобразование "T" в "const unsigned int", возможна потеря данных
+          with
+          [
+              T=float
+          ]
+D:\Study\AOKG\lab_05\lab_05\Mesh.cpp(169,37): warning C4244: аргумент: преобразование "T" в "const unsigned int", возможна потеря данных
+          with
+          [
+              T=float
+          ]
+D:\Study\AOKG\lab_05\lab_05\Mesh.cpp(170,37): warning C4244: аргумент: преобразование "T" в "const unsigned int", возможна потеря данных
+          with
+          [
+              T=float
+          ]
+D:\Study\AOKG\lab_05\lab_05\Mesh.cpp(171,37): warning C4244: аргумент: преобразование "T" в "const unsigned int", возможна потеря данных
+          with
+          [
+              T=float
+          ]
+D:\Study\AOKG\lab_05\lab_05\Mesh.cpp(173,43): warning C4244: аргумент: преобразование "T" в "const unsigned int", возможна потеря данных
+          with
+          [
+              T=float
+          ]
+D:\Study\AOKG\lab_05\lab_05\Mesh.cpp(174,43): warning C4244: аргумент: преобразование "T" в "const unsigned int", возможна потеря данных
+          with
+          [
+              T=float
+          ]
+D:\Study\AOKG\lab_05\lab_05\Mesh.cpp(175,43): warning C4244: аргумент: преобразование "T" в "const unsigned int", возможна потеря данных
+          with
+          [
+              T=float
+          ]
+D:\Study\AOKG\lab_05\lab_05\Mesh.cpp(177,38): warning C4244: аргумент: преобразование "T" в "const unsigned int", возможна потеря данных
+          with
+          [
+              T=float
+          ]
+D:\Study\AOKG\lab_05\lab_05\Mesh.cpp(178,38): warning C4244: аргумент: преобразование "T" в "const unsigned int", возможна потеря данных
+          with
+          [
+              T=float
+          ]
+D:\Study\AOKG\lab_05\lab_05\Mesh.cpp(179,38): warning C4244: аргумент: преобразование "T" в "const unsigned int", возможна потеря данных
+          with
+          [
+              T=float
+          ]
+D:\Study\AOKG\lab_05\lab_05\Mesh.cpp(183,37): warning C4244: аргумент: преобразование "T" в "const unsigned int", возможна потеря данных
+          with
+          [
+              T=float
+          ]
+D:\Study\AOKG\lab_05\lab_05\Mesh.cpp(184,37): warning C4244: аргумент: преобразование "T" в "const unsigned int", возможна потеря данных
+          with
+          [
+              T=float
+          ]
+D:\Study\AOKG\lab_05\lab_05\Mesh.cpp(185,37): warning C4244: аргумент: преобразование "T" в "const unsigned int", возможна потеря данных
+          with
+          [
+              T=float
+          ]
+D:\Study\AOKG\lab_05\lab_05\Mesh.cpp(187,43): warning C4244: аргумент: преобразование "T" в "const unsigned int", возможна потеря данных
+          with
+          [
+              T=float
+          ]
+D:\Study\AOKG\lab_05\lab_05\Mesh.cpp(188,43): warning C4244: аргумент: преобразование "T" в "const unsigned int", возможна потеря данных
+          with
+          [
+              T=float
+          ]
+D:\Study\AOKG\lab_05\lab_05\Mesh.cpp(189,43): warning C4244: аргумент: преобразование "T" в "const unsigned int", возможна потеря данных
+          with
+          [
+              T=float
+          ]
+D:\Study\AOKG\lab_05\lab_05\Mesh.cpp(191,38): warning C4244: аргумент: преобразование "T" в "const unsigned int", возможна потеря данных
+          with
+          [
+              T=float
+          ]
+D:\Study\AOKG\lab_05\lab_05\Mesh.cpp(192,38): warning C4244: аргумент: преобразование "T" в "const unsigned int", возможна потеря данных
+          with
+          [
+              T=float
+          ]
+D:\Study\AOKG\lab_05\lab_05\Mesh.cpp(193,38): warning C4244: аргумент: преобразование "T" в "const unsigned int", возможна потеря данных
+          with
+          [
+              T=float
+          ]
+D:\Study\AOKG\lab_05\lab_05\Mesh.cpp(226,31): error C2065: indices: необъявленный идентификатор
+D:\Study\AOKG\lab_05\lab_05\Mesh.cpp(226,64): error C2065: indices: необъявленный идентификатор
+D:\Study\AOKG\lab_05\lab_05\Mesh.cpp(226,78): error C2660: glDrawElements: функция не принимает 2 аргументов
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\gl\GL.h(1224,25): message : см. объявление "glDrawElements"

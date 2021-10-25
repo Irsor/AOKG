@@ -1,0 +1,2 @@
+D:/Study/AOKG/lab_05/lab_05/GLM/out/build/x64-Debug/CMakeFiles/edit_cache.dir
+D:/Study/AOKG/lab_05/lab_05/GLM/out/build/x64-Debug/CMakeFiles/rebuild_cache.dir
