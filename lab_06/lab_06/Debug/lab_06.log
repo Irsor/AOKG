@@ -1,0 +1,9 @@
+﻿  Main.cpp
+C:\Users\skar6\Desktop\lab_06\lab_06\Main.cpp(172,37): warning C4244: аргумент: преобразование "double" в "GLfloat", возможна потеря данных
+C:\Users\skar6\Desktop\lab_06\lab_06\Main.cpp(176,37): warning C4244: аргумент: преобразование "double" в "GLfloat", возможна потеря данных
+C:\Users\skar6\Desktop\lab_06\lab_06\Main.cpp(180,34): warning C4244: аргумент: преобразование "double" в "GLfloat", возможна потеря данных
+C:\Users\skar6\Desktop\lab_06\lab_06\Main.cpp(184,34): warning C4244: аргумент: преобразование "double" в "GLfloat", возможна потеря данных
+C:\Users\skar6\Desktop\lab_06\lab_06\Main.cpp(188,37): warning C4244: аргумент: преобразование "double" в "GLfloat", возможна потеря данных
+C:\Users\skar6\Desktop\lab_06\lab_06\Main.cpp(192,37): warning C4244: аргумент: преобразование "double" в "GLfloat", возможна потеря данных
+C:\Users\skar6\Desktop\lab_06\lab_06\Main.cpp(226,41): warning C4305: аргумент: усечение из "double" в "float"
+  lab_06.vcxproj -> C:\Users\skar6\Desktop\lab_06\Debug\lab_06.exe
