@@ -1,0 +1,3 @@
+﻿  Camera.cpp
+D:\Study\AOKG\lab_03\lab_04\Camera.cpp(26,23): warning C4305: =: усечение из "double" в "GLfloat"
+  lab_04.vcxproj -> D:\Study\AOKG\lab_03\Debug\lab_04.exe
