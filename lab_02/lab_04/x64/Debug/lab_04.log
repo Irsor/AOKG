@@ -1,0 +1,15 @@
+﻿GraphicObject.obj : error LNK2019: ссылка на неразрешенный внешний символ __imp_glutWireTeapot в функции "public: void __cdecl GraphicObject::draw(void)" (?draw@GraphicObject@@QEAAXXZ).
+Main.obj : error LNK2019: ссылка на неразрешенный внешний символ __imp_glutInitWindowPosition в функции main.
+Main.obj : error LNK2019: ссылка на неразрешенный внешний символ __imp_glutInitWindowSize в функции main.
+Main.obj : error LNK2019: ссылка на неразрешенный внешний символ __imp_glutMainLoop в функции main.
+Main.obj : error LNK2019: ссылка на неразрешенный внешний символ __imp_glutSetWindowTitle в функции "void __cdecl outputFramesPerSecond(void)" (?outputFramesPerSecond@@YAXXZ).
+Main.obj : error LNK2019: ссылка на неразрешенный внешний символ __imp_glutPostRedisplay в функции "void __cdecl Simulation(void)" (?Simulation@@YAXXZ).
+Main.obj : error LNK2019: ссылка на неразрешенный внешний символ __imp_glutSwapBuffers в функции "void __cdecl Display(void)" (?Display@@YAXXZ).
+Main.obj : error LNK2019: ссылка на неразрешенный внешний символ __imp_glutIdleFunc в функции main.
+Main.obj : error LNK2019: ссылка на неразрешенный внешний символ __imp_glutKeyboardFunc в функции main.
+Main.obj : error LNK2019: ссылка на неразрешенный внешний символ __imp_glutReshapeFunc в функции main.
+Main.obj : error LNK2019: ссылка на неразрешенный внешний символ __imp_glutDisplayFunc в функции main.
+Main.obj : error LNK2019: ссылка на неразрешенный внешний символ __imp___glutInitWithExit в функции glutInit_ATEXIT_HACK.
+Main.obj : error LNK2019: ссылка на неразрешенный внешний символ __imp___glutCreateWindowWithExit в функции glutCreateWindow_ATEXIT_HACK.
+D:\Study\AOKG\lab_02\lab_04\\freeglut\lib\freeglut.lib : warning LNK4272: тип компьютера библиотеки "x86" конфликтует с типом целевого компьютера "x64"
+D:\Study\AOKG\lab_02\x64\Debug\lab_02.exe : fatal error LNK1120: неразрешенных внешних элементов: 13
