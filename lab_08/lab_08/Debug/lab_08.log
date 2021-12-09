@@ -1,0 +1,5 @@
+﻿  Main.cpp
+D:\Study\AOKG\lab_08\lab_08\Simulation.h(28,32): warning C4091: extern : пропускается слева от "MoveDirection", когда ни одна переменная не объявлена
+D:\Study\AOKG\lab_08\lab_08\Main.cpp(59,32): warning C4091: extern : пропускается слева от "MoveDirection", когда ни одна переменная не объявлена
+D:\Study\AOKG\lab_08\lab_08\Main.cpp(227,41): warning C4305: аргумент: усечение из "double" в "float"
+  lab_08.vcxproj -> D:\Study\AOKG\lab_08\Debug\lab_08.exe
