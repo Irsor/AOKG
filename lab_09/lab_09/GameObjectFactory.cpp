@@ -17,13 +17,9 @@ bool GameObjectFactory::init(std::string filename)
 		return false;
 	}
 
-	// std::cout << "Парсим файл " << filename << ":" << std::endl;
-	
 	std::string jsonString;
 	getline(fin, jsonString, static_cast<char>(0));
 	fin.close();
-
-	// std::cout << jsonString << std::endl;
 
 	rapidjson::Document document;
 	document.Parse(jsonString.c_str());
@@ -125,20 +121,19 @@ bool GameObjectFactory::init(std::string filename)
 
 			std::shared_ptr <Texture> texture = std::make_shared<Texture> (tex[textureCounter_2]);
 			texture.get()->load(document[firstLevel[i].c_str()][secondLevel[1].c_str()]["texture"].GetString());
-			std::cout << std::endl << document[firstLevel[i].c_str()][secondLevel[1].c_str()]["texture"].GetString();
-
-			Texture::disableAll();
-			materialTexture[textureCounter_2].setTexture(texture);
-
-			std::cout << textureCounter_2;
-
+			this->textures.push_back(texture);
 			textureCounter_2++;
 		}
 	}
 
+
 	this->meshes.push_back(std::make_shared<Mesh>(mesh[0]));
 	this->meshes.push_back(std::make_shared<Mesh>(mesh[1]));
 	this->meshes.push_back(std::make_shared<Mesh>(mesh[2]));
+
+	materialTexture[0].setTexture(this->textures[0]);
+	materialTexture[1].setTexture(this->textures[1]);
+	materialTexture[2].setTexture(this->textures[2]);
 
 
 	this->materials.push_back(std::make_shared<PhongMaterialWithTexture>(materialTexture[0]));
@@ -158,7 +153,7 @@ std::shared_ptr<GameObject> GameObjectFactory::create(GameObjectType type, int x
 	case GameObjectType::LIGHT_OBJECT:
 		gr->setMaterial(this->materials[0]);
 		gr->setMesh(this->meshes[0]);
-		
+
 		break;
 	case GameObjectType::HEAVY_OBJECT:
 		gr->setMaterial(this->materials[1]);
@@ -185,7 +180,6 @@ std::shared_ptr<GameObject> GameObjectFactory::create(GameObjectType type, int x
 	}
 
 	gr->setPosition(x - 10, 0, y - 10);
-	// std::cout << x << "   " << y << std::endl;
  	GameObject* gm = new GameObject;
 	gm->setGraphicObject(*gr);
 	gm->setPosition(x, y);
@@ -229,7 +223,6 @@ std::shared_ptr<Monster> GameObjectFactory::create(GameObjectType type, int x, i
 	}
 
 	gr->setPosition(x - 10, 0, y - 10);
-	// std::cout << x << "   " << y << std::endl;
 	Monster* gm = new Monster;
 	gm->setGraphicObject(*gr);
 	gm->setPosition(x, y);

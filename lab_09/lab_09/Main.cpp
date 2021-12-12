@@ -159,9 +159,13 @@ void Display(void)
 		player.get()->draw();
 	}
 	
-	enemy[0].get()->draw(); 
-	enemy[1].get()->draw();
-	enemy[2].get()->draw(); 
+	for (int i = 0; i < 3; i++)
+	{
+		if (enemy[i].get()->getExist())
+		{
+			enemy[i].get()->draw();
+		}
+	}
 
 	plane.draw();
 
@@ -171,7 +175,6 @@ void Display(void)
 	}
 
 	outputFramesPerSecond();
-	// std::cout << mapObjects[0][0];
 
 	// смена переднего и заднего буферов 
 

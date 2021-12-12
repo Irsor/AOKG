@@ -3,7 +3,7 @@
     "mesh": "data//meshes//HighPolyBox.obj",
     "material": {
 	  "type": "PhongMaterialWithTexture",
-	  "texture": "data//textures//light_object.png",
+	  "texture": "data//textures//light_object.jpg",
       "diffuse": [ 1.0, 1.0, 0.6, 1.0 ],
       "ambient": [ 0.4, 0.4, 0.2, 1.0 ],
       "specular": [ 1.0, 1.0, 1.0, 1.0 ],
@@ -14,8 +14,8 @@
   "HeavyObject": {
     "mesh": "data//meshes//HighPolyBox.obj",
     "material": {
-	  "type": "PhongMaterialWithTexture",
-	  "texture": "data//textures//heavy_object.png",
+      "type": "PhongMaterialWithTexture",
+      "texture": "data//textures//heavy_object.jpg",
       "diffuse": [ 0.6, 0.6, 0.6, 1.0 ],
       "ambient": [ 0.1, 0.1, 0.1, 1.0 ],
       "specular": [ 0.0, 0.0, 0.0, 1.0 ],
@@ -26,8 +26,8 @@
   "BorderObject": {
     "mesh": "data//meshes//HighPolyBox.obj",
     "material": {
-	  "type": "PhongMaterialWithTexture",
-	  "texture": "data//textures//border_object.png",
+      "type": "PhongMaterialWithTexture",
+      "texture": "data//textures//border_object.jpg",
       "diffuse": [ 0.6, 0.6, 0.6, 1.0 ],
       "ambient": [ 0.3, 0.3, 0.3, 1.0 ],
       "specular": [ 0.0, 0.0, 0.0, 1.0 ],

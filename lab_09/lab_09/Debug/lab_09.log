@@ -1,13 +1,5 @@
-﻿  Simulation.cpp
+﻿  Main.cpp
 D:\Study\AOKG\lab_09\lab_09\Simulation.h(29,32): warning C4091: extern : пропускается слева от "MoveDirection", когда ни одна переменная не объявлена
-D:\Study\AOKG\lab_09\lab_09\Simulation.cpp(137,113): warning C4244: аргумент: преобразование "T" в "int", возможна потеря данных
-          with
-          [
-              T=float
-          ]
-D:\Study\AOKG\lab_09\lab_09\Simulation.cpp(137,83): warning C4244: аргумент: преобразование "T" в "int", возможна потеря данных
-          with
-          [
-              T=float
-          ]
+D:\Study\AOKG\lab_09\lab_09\Main.cpp(60,32): warning C4091: extern : пропускается слева от "MoveDirection", когда ни одна переменная не объявлена
+D:\Study\AOKG\lab_09\lab_09\Main.cpp(236,57): warning C4305: аргумент: усечение из "double" в "float"
   lab_09.vcxproj -> D:\Study\AOKG\lab_09\Debug\lab_09.exe

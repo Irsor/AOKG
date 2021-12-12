@@ -28,7 +28,6 @@ void Mesh::load(std::string filename)
 	if (fin.is_open())
 	{
 		std::string str;
-		/*std::cout << std::endl << "Файл " + filename + " успешно открыт!" << std::endl << std::endl;*/
 		GLfloat numbers[3];
 
 		while (fin >> str)
@@ -43,8 +42,6 @@ void Mesh::load(std::string filename)
 				fin >> numbers[1];
 				fin >> numbers[2];
 
-				//std::cout << "v " << numbers[0] << " " << numbers[0] << " " << numbers[0] << std::endl;
-
 				v.push_back(glm::vec3(numbers[0], numbers[1], numbers[2]));
 			}
 			if (str == "vn")
@@ -53,8 +50,6 @@ void Mesh::load(std::string filename)
 				fin >> numbers[1];
 				fin >> numbers[2];
 
-				//std::cout << "vn " << numbers[0] << " " << numbers[0] << " " << numbers[0] << std::endl;
-
 				n.push_back(glm::vec3(numbers[0], numbers[1], numbers[2]));
 			}
 			if (str == "vt")
@@ -62,8 +57,6 @@ void Mesh::load(std::string filename)
 				fin >> numbers[0];
 				fin >> numbers[1];
 				fin >> numbers[2];
-
-				//std::cout << "vt " << numbers[0] << " " << numbers[0] << " " << numbers[0] << std::endl;
 
 				t.push_back(glm::vec3(numbers[0], numbers[1], numbers[2]));
 			}

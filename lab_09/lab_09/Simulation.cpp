@@ -57,11 +57,14 @@ void gameObjectSimulation(float simulationTime)
 
 	for (int i = 0; i < 3; i++)
 	{
-		enemy[i].get()->simulate(simulationTime);
-
-		if (enemy[i].get()->getPositon().x == player.get()->getPositon().x && enemy[i].get()->getPositon().y == player.get()->getPositon().y)
+		if (enemy[i].get()->getExist() == true)
 		{
-			showPlayer = false;
+			enemy[i].get()->simulate(simulationTime);
+
+			if (enemy[i].get()->getPositon().x == player.get()->getPositon().x && enemy[i].get()->getPositon().y == player.get()->getPositon().y)
+			{
+				showPlayer = false;
+			}
 		}
 	}
 }
@@ -148,8 +151,6 @@ void bombSimualtion(float simulationTime)
 
 		if (bomb != nullptr)
 		{
-			std::cout << std::endl << bomb.get()->getPositon().x << " " << bomb.get()->getPositon().y;
-			
 			// 8 декабря 2021 20:44 видит бог я не хотел этого
 			if (player.get()->getPositon().x == bomb.get()->getPositon().x && player.get()->getPositon().y == bomb.get()->getPositon().y)
 			{
@@ -197,54 +198,63 @@ void bombSimualtion(float simulationTime)
 						if (mapObjects[i][j].get()->getPositon().x == bomb.get()->getPositon().x && mapObjects[i][j].get()->getPositon().y == bomb.get()->getPositon().y && passabilityMap[i][j] == 1)
 						{
 							mapObjects[i][j] = nullptr;
+							passabilityMap[i][j] = 0;
 						}
 						else
 						{
 							if (mapObjects[i][j].get()->getPositon().x == bomb.get()->getPositon().x - 1 && mapObjects[i][j].get()->getPositon().y == bomb.get()->getPositon().y && passabilityMap[i][j] == 1)
 							{
 								mapObjects[i][j] = nullptr;
+								passabilityMap[i][j] = 0;
 							}
 							else
 							{
 								if (mapObjects[i][j].get()->getPositon().x == bomb.get()->getPositon().x - 2 && mapObjects[i][j].get()->getPositon().y == bomb.get()->getPositon().y && passabilityMap[i][j] == 1)
 								{
 									mapObjects[i][j] = nullptr;
+									passabilityMap[i][j] = 0;
 								}
 								else
 								{
 									if (mapObjects[i][j].get()->getPositon().x == bomb.get()->getPositon().x + 1 && mapObjects[i][j].get()->getPositon().y == bomb.get()->getPositon().y && passabilityMap[i][j] == 1)
 									{
 										mapObjects[i][j] = nullptr;
+										passabilityMap[i][j] = 0;
 									}
 									else
 									{
 										if (mapObjects[i][j].get()->getPositon().x == bomb.get()->getPositon().x + 2 && mapObjects[i][j].get()->getPositon().y == bomb.get()->getPositon().y && passabilityMap[i][j] == 1)
 										{
 											mapObjects[i][j] = nullptr;
+											passabilityMap[i][j] = 0;
 										}
 										else
 										{
 											if (mapObjects[i][j].get()->getPositon().x == bomb.get()->getPositon().x && mapObjects[i][j].get()->getPositon().y == bomb.get()->getPositon().y + 1 && passabilityMap[i][j] == 1)
 											{
 												mapObjects[i][j] = nullptr;
+												passabilityMap[i][j] = 0;
 											}
 											else
 											{
 												if (mapObjects[i][j].get()->getPositon().x == bomb.get()->getPositon().x && mapObjects[i][j].get()->getPositon().y == bomb.get()->getPositon().y + 2 && passabilityMap[i][j] == 1)
 												{
 													mapObjects[i][j] = nullptr;
+													passabilityMap[i][j] = 0;
 												}
 												else
 												{
 													if (mapObjects[i][j].get()->getPositon().x == bomb.get()->getPositon().x && mapObjects[i][j].get()->getPositon().y == bomb.get()->getPositon().y - 1 && passabilityMap[i][j] == 1)
 													{
 														mapObjects[i][j] = nullptr;
+														passabilityMap[i][j] = 0;
 													}
 													else
 													{
 														if (mapObjects[i][j].get()->getPositon().x == bomb.get()->getPositon().x && mapObjects[i][j].get()->getPositon().y == bomb.get()->getPositon().y - 2 && passabilityMap[i][j] == 1)
 														{
 															mapObjects[i][j] = nullptr;
+															passabilityMap[i][j] = 0;
 														}
 													}
 												}
@@ -254,6 +264,49 @@ void bombSimualtion(float simulationTime)
 								}
 							}
 						}
+					}
+				}
+			}
+
+			for (int i = 0; i < 3; i++)
+			{
+				if (enemy[i].get()->getExist() == true)
+				{
+					if (enemy[i].get()->getPositon().x == bomb.get()->getPositon().x && enemy[i].get()->getPositon().y == bomb.get()->getPositon().y)
+					{
+						enemy[i].get()->setExist(false);
+					}
+					if (enemy[i].get()->getPositon().x == bomb.get()->getPositon().x && enemy[i].get()->getPositon().y == bomb.get()->getPositon().y - 1)
+					{
+						enemy[i].get()->setExist(false);
+					}
+					if (enemy[i].get()->getPositon().x == bomb.get()->getPositon().x && enemy[i].get()->getPositon().y == bomb.get()->getPositon().y - 2)
+					{
+						enemy[i].get()->setExist(false);
+					}
+					if (enemy[i].get()->getPositon().x == bomb.get()->getPositon().x && enemy[i].get()->getPositon().y == bomb.get()->getPositon().y + 1)
+					{
+						enemy[i].get()->setExist(false);
+					}
+					if (enemy[i].get()->getPositon().x == bomb.get()->getPositon().x && enemy[i].get()->getPositon().y == bomb.get()->getPositon().y + 2)
+					{
+						enemy[i].get()->setExist(false);
+					}
+					if (enemy[i].get()->getPositon().x == bomb.get()->getPositon().x - 1 && enemy[i].get()->getPositon().y == bomb.get()->getPositon().y)
+					{
+						enemy[i].get()->setExist(false);
+					}
+					if (enemy[i].get()->getPositon().x == bomb.get()->getPositon().x - 2 && enemy[i].get()->getPositon().y == bomb.get()->getPositon().y)
+					{
+						enemy[i].get()->setExist(false);
+					}
+					if (enemy[i].get()->getPositon().x == bomb.get()->getPositon().x + 1 && enemy[i].get()->getPositon().y == bomb.get()->getPositon().y)
+					{
+						enemy[i].get()->setExist(false);
+					}
+					if (enemy[i].get()->getPositon().x == bomb.get()->getPositon().x + 2 && enemy[i].get()->getPositon().y == bomb.get()->getPositon().y)
+					{
+						enemy[i].get()->setExist(false);
 					}
 				}
 			}

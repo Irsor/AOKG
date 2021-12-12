@@ -45,6 +45,10 @@ public:
 	// проверка на то, что объект в настоящий момент движется
 	bool isMoving();
 
+	void setExist(bool value);
+
+	bool getExist();
+
 private:
 	// логические координаты
 	glm::vec2 position;
@@ -56,6 +60,8 @@ private:
 	float progress;
 	// скорость перемещения
 	float speed;
+
+	bool exist;
 };
 
 class Monster : public GameObject

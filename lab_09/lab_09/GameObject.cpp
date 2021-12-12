@@ -31,7 +31,6 @@ void GameObject::simulate(float sec)
 		{
 			this->progress += sec * this->speed;
 			this->graphicObject.setPosition(this->getPositon().x - 10 - this->progress, 0, this->getPositon().y - 10);
-			// std::cout << this->progress << std::endl;
 		}
 		if (this->progress >= 1.0f)
 		{
@@ -46,7 +45,6 @@ void GameObject::simulate(float sec)
 		{
 			this->progress += sec * this->speed;
 			this->graphicObject.setPosition(this->getPositon().x - 10 + this->progress, 0, this->getPositon().y - 10);
-			// std::cout << this->progress << std::endl;
 		}
 		if (this->progress >= 1.0f)
 		{
@@ -61,7 +59,6 @@ void GameObject::simulate(float sec)
 		{
 			this->progress += sec * this->speed;
 			this->graphicObject.setPosition(this->getPositon().x - 10, 0, this->getPositon().y - 10 - this->progress);
-			// std::cout << this->progress << std::endl;
 		}
 		if (this->progress >= 1.0f)
 		{
@@ -76,7 +73,6 @@ void GameObject::simulate(float sec)
 		{
 			this->progress += sec * this->speed;
 			this->graphicObject.setPosition(this->getPositon().x - 10, 0, this->getPositon().y - 10 + this->progress);
-			// std::cout << this->progress << std::endl;
 		}
 		if (this->progress >= 1.0f)
 		{
@@ -99,9 +95,19 @@ bool GameObject::isMoving()
 	}
 }
 
+void GameObject::setExist(bool value)
+{
+	this->exist = value;
+}
+
+bool GameObject::getExist()
+{
+	return exist;
+}
+
 void GameObject::move(MoveDirection direction, float speed)
 {
-	this->speed = speed;
+	this->speed = speed + 10.0f;
 	switch (direction)
 	{
 	case MoveDirection::LEFT:
@@ -119,7 +125,10 @@ void GameObject::move(MoveDirection direction, float speed)
 	}
 }
 
-Monster::Monster() {}
+Monster::Monster() 
+{
+	this->setExist(true);
+}
 
 void Monster::setLastStand(int x, int y)
 {
